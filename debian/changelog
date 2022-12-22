@@ -1,0 +1,314 @@
+numlockx (1.2-9) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 12 May 2022 18:09:30 +0800
+
+numlockx (1.2-9) unstable; urgency=medium
+
+  * Run wrap-and-sort -ast.
+  * [lintian] Update copyright info for debian subdirectory.
+  * Delete watchfile, there is no current upstream homepage.
+  * Use debhelper v13 compat mode.
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 24 Dec 2021 08:18:28 +0100
+
+numlockx (1.2-8) unstable; urgency=low
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/changelog: Remove trailing whitespaces
+
+  [ Andreas Metzler ]
+  * Adopt package. Thanks Michal! Closes: #923349
+  * Set DEB_BUILD_MAINT_OPTIONS := hardening=+all.
+  * Use debhelper 12 compat.
+  * Set Rules-Requires-Root: no.
+  * Upstream homepage http://home.kde.org/~seli/numlockx/ has been dead for a
+    couple of years, stop referring to it in control. Closes: #846260
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 22 Jun 2019 10:53:32 +0200
+
+numlockx (1.2-7.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Unit 193 ]
+  * d/55numlockx: Adjust to find laptop-detect after move to /usr/bin.
+    (Closes: #894481)
+
+  [ Mattia Rizzolo ]
+  * Move VCS to salsa.debian.org.
+
+ -- Unit 193 <unit193@ubuntu.com>  Sun, 20 May 2018 13:44:27 -0400
+
+numlockx (1.2-7) unstable; urgency=medium
+
+  * Rewrite USB keyboard detection using pure udev (Closes: #757475).
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 11 Aug 2014 12:08:36 +0200
+
+numlockx (1.2-6) unstable; urgency=medium
+
+  * Use canonical VCS URLs in debian/control.
+  * Bump standards to 3.9.5.
+  * Improve auto mode for notebooks with external keyboard (Closes: #734701).
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 13 May 2014 12:33:42 +0200
+
+numlockx (1.2-5) unstable; urgency=low
+
+  * X session script improvements (Closes: #684601).
+  * Switch to dh 9.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 07 May 2013 13:17:01 +0200
+
+numlockx (1.2-4) unstable; urgency=low
+
+  * Fix typo in X session script (Closes: #672974, #666981).
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 15 May 2012 08:33:21 +0200
+
+numlockx (1.2-3) unstable; urgency=low
+
+  * Provide configuration file for controlling numlockx behaviour in X session
+    (Closes: #648013).
+  * Default to disabling numlock for laptops (Closes: #666981).
+  * Bump standards to 3.9.3.
+  * Update upstream homepage URL.
+  * Rewrite debian/changelog to machine-readable format.
+  * Improve --help output (Closes: #617736).
+  * Add option to get numlock status (Closes: #617737).
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 14 May 2012 11:41:24 +0200
+
+numlockx (1.2-2) unstable; urgency=low
+
+  * New maintainer (Closes: #479157).
+  * Move packaging to collab-maint git.
+  * Convert package to dh 7.
+
+ -- Michal Čihař <nijel@debian.org>  Wed, 01 Dec 2010 16:50:20 +0100
+
+numlockx (1.2-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release
+  * Bump Standard Versions to 3.9.1
+  * Added source format 3.0 (quilt)
+
+ -- Lorenzo De Liso <blackz@ubuntu.com>  Wed, 15 Sep 2010 18:15:57 +0200
+
+numlockx (1.1-10) unstable; urgency=low
+
+  * QA upload.
+    + Set maintainer to Debian QA Group <packages@qa.debian.org>.
+  * Move Homepage from package description to source stanza.
+  * Bump Standards Version to 3.8.1. (No changes needed).
+
+ -- Barry deFreese <bdefreese@debian.org>  Thu, 21 May 2009 16:43:16 -0400
+
+numlockx (1.1-9) unstable; urgency=low
+
+  * Added missing CC=gcc macro in debian/rules.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sun, 22 Jun 2008 17:17:25 +0300
+
+numlockx (1.1-8) unstable; urgency=low
+
+  * Upgraded Build-Depends to match current X.org packages.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Fri, 20 Jun 2008 20:04:30 +0300
+
+numlockx (1.1-7) unstable; urgency=low
+
+  * Retooled using autoconf 2.61, automake 1.10, libtool 1.5.22.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sat,  7 Jul 2007 00:58:10 +0300
+
+numlockx (1.1-6) unstable; urgency=low
+
+  * Made the startup script always succeed (Fixes: Malone 116528).
+  * Upgraded to Standards-Version 3.7.2; no change required.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Thu, 24 May 2007 14:14:55 +0300
+
+numlockx (1.1-5) unstable; urgency=low
+
+  * Bumped all Build-Depends based on manual @cdbs@ answers.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sun,  4 Jun 2006 23:06:39 +0300
+
+numlockx (1.1-4) unstable; urgency=low
+
+  * Retooled libraries for X11R7 transition (Closes: #367833).
+  * Tightened up Build-Depends to match X11R7 versions.
+  * Upgraded Build-Depends on debhelper to version 5.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sun,  4 Jun 2006 15:24:45 +0300
+
+numlockx (1.1-3) unstable; urgency=low
+
+  * Added missing call to list-missing target of utils.mk CDBS include.
+  * Added missing ${misc:Depends} to binary in debian/control.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon, 19 Dec 2005 21:24:46 +0200
+
+numlockx (1.1-2) unstable; urgency=low
+
+  * The "debian/rules overhaul" release:
+    - Swapped order of debhelper.mk and autotools.mk CDBS includes.
+    - Added utils.mk CDBS include.
+    - Changed all := into +=.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Thu, 24 Nov 2005 02:00:03 +0200
+
+numlockx (1.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added 'toggle' option to 'on' and 'off' options (Closes: #311044).
+    - Reran autotools to automake 1.9 and autoconf 2.50 compliance.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon,  3 Oct 2005 20:02:12 +0300
+
+numlockx (1.0-18) unstable; urgency=low
+
+  * Reverted to static debian/control file.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon, 15 Aug 2005 08:57:47 +0300
+
+numlockx (1.0-17) unstable; urgency=low
+
+  * Converted debian/control to debian/control.in for CDBS auto-updating.
+  * Upgraded to Debian Policy 3.6.2 standards; no change required.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sun, 19 Jun 2005 12:18:03 +0300
+
+numlockx (1.0-16) unstable; urgency=low
+
+  * Reduced Build-Depends according to 'dpkg-depcheck -m' output.
+    This also happens to provide correct modularized XFree86 dependencies,
+    as opposed to the deprecated xlibs-dev metapackage we previously used.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Thu, 12 May 2005 13:15:59 +0300
+
+numlockx (1.0-15) unstable; urgency=low
+
+  * Final debian/rules cleanup before the Sarge release.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Wed,  4 May 2005 04:04:23 +0300
+
+numlockx (1.0-14) unstable; urgency=medium
+
+  * [debian/control]:
+    - Added missing texinfo to build dependencies.
+  * [debian/rules]:
+    - Deflated dependencies via ld's --as-needed option.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sat, 19 Mar 2005 18:53:33 +0200
+
+numlockx (1.0-13) unstable; urgency=medium
+
+  * Removed outdated Debconf info from the manual page (Closes: #296892).
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Fri, 25 Feb 2005 15:42:53 +0200
+
+numlockx (1.0-12) unstable; urgency=low
+
+  * Updated the upstream URL in debian/copyright and debian/control.
+  * Added watch file to monitor the upstream tarball.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Thu, 23 Dec 2004 02:46:41 +0200
+
+numlockx (1.0-11) unstable; urgency=low
+
+  * Added missing automake1.4 to build dependencies.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon, 20 Dec 2004 02:23:28 +0200
+
+numlockx (1.0-10) unstable; urgency=low
+
+  * Changed path in 55numlockx to match Debian Policy 11.8.7, paragraph 1.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon, 20 Dec 2004 00:56:49 +0200
+
+numlockx (1.0-9) unstable; urgency=low
+
+  * Upgraded to CDBS.
+  * Removed pointless Debconf question and corresponding README.Debian too.
+    Someone that does NOT want NumLock to be enabled by X11 initialization
+    scripts does NOT need this package (Closes: #202045, #202046).
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Mon, 20 Dec 2004 00:02:19 +0200
+
+numlockx (1.0-8) unstable; urgency=low
+
+  * Adopted orphan package (Bug: #274287).
+    Thanks to Chris Jones for previously maintaining it.
+  * Removed pointless menu entry (Closes: #197552).
+  * Fixed the source of all Lintian errors.
+  * Sponsored by Kenshi Muto.
+
+ -- Martin-Éric Racine <q-funk@iki.fi>  Sun, 19 Dec 2004 18:18:45 +0200
+
+numlockx (1.0-7) unstable; urgency=low
+
+  * Fix path for numlockx, closes: #160911
+  * Fix path in 55numlockx script, closes: #160910
+  * add AM_MAINTAINER_MODE closes: #160111
+  * update/remove /etc/X11/Xsession.d/55numlockx when upgrading/purging
+  * update man page and readme, closes: #176703
+  * Fix path for numlockx in menu file
+  * Patch numlockx source to display usage if display is unopenable
+    mostly closes: #176704
+  * Some of the above fixes supplied by:
+     Ariel Shkedi <asdebian@dsgml.com>
+
+ -- Chris Jones <chris@black-sun.co.uk>  Sat, 14 Sep 2002 23:40:12 +0100
+
+numlockx (1.0-6) unstable; urgency=low
+
+  * Added debconf helper script for the Xsession.d helper script
+    (fixes #153448)
+
+ -- Chris Jones <chris@black-sun.co.uk>  Fri, 30 Aug 2002 14:20:58 +0100
+
+numlockx (1.0-5) unstable; urgency=low
+
+  * Fixed #158827, numlockx binary now goes into the correct location
+
+ -- Chris Jones <chris@black-sun.co.uk>  Fri, 30 Aug 2002 10:57:05 +0100
+
+numlockx (1.0-4) unstable; urgency=low
+
+  * Corrected Build-Depends, fixes #152355
+  * Corrected typo in README.Debian, fixes #153810 and #153448 (partially)
+
+ -- Chris Jones <chris@black-sun.co.uk>  Fri, 30 Aug 2002 10:56:47 +0100
+
+numlockx (1.0-3) unstable; urgency=low
+
+  * Added note about Xsession.d script to the manpage
+  * Corrected a missing linebreak in the man page
+
+ -- Chris Jones <chris@black-sun.co.uk>  Wed,  3 Jul 2002 12:37:25 +0100
+
+numlockx (1.0-2) unstable; urgency=low
+
+  * Added Xsession.d script from Ariel Shkedi <asdebian@dsgml.com>
+  * Added README.Debian
+
+ -- Chris Jones <chris@black-sun.co.uk>  Mon, 24 Jun 2002 23:24:28 +0100
+
+numlockx (1.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Chris Jones <chris@black-sun.co.uk>  Sun, 26 May 2002 02:47:06 +0100

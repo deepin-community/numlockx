@@ -1,0 +1,34 @@
+Source: numlockx
+Section: x11
+Priority: optional
+Maintainer: Andreas Metzler <ametzler@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ libice-dev (>= 1:1.0.0),
+ libx11-dev,
+ libxtst-dev (>= 1:1.0.0),
+ x11proto-xext-dev,
+ xutils-dev,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/debian/numlockx
+Vcs-Git: https://salsa.debian.org/debian/numlockx.git
+
+Package: numlockx
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Suggests:
+ x-display-manager,
+Enhances:
+ gdm,
+ kdm,
+ wdm,
+ xdm,
+Description: enable NumLock in X11 sessions
+ Utilities to enable the keyboard's Numeric Lock during X11
+ session initialization or using command line utility.
+ .
+ The package automatically installs session script to enable numlock
+ on session start.
